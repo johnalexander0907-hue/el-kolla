@@ -1,0 +1,203 @@
+      /*barra de menu*/
+:root{
+    --color1:#8b3a00;
+    --color2:#b45000;
+    --color3:#e06b15;
+    --color4:#F5E6CC;
+    --color5:#F5E6CC;
+    --color6:#ffcc99;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: var(--color3);
+}
+header{ 
+    display: flex;
+    justify-content: center;
+    background-color: var(--color1);
+}
+.contenedor{
+    width: 70%; 
+}
+.navegacion{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.navegacion h1{
+    color: var(--color4);
+    font-size: 40px;
+}
+.navegacion .enlaces{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.navegacion .enlaces a{
+    color: var(--color4);
+    text-decoration: none;
+    transition: color 0.4s;
+}
+.navegacion .enlaces a:hover{
+    color: var(--color6);
+}
+             /*CONTENIDO*/
+
+.contenedor2{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    gap: 200px;
+}
+.logo{
+    width: 400px;
+    height: 125vh;
+}
+.logo2{
+    text-align: center;
+}
+.logo2 .guion{
+    color: var(--color4);
+    font-size: 30px;
+}
+.entrada{
+    display: flex;
+    width: 600px;
+    height: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color6);
+}
+.logo2 .u{
+    color: var(--color1);
+    font-weight:bold;
+    font-size: 25px;
+}
+.muestra{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+ /*PIE DE PAGINA*/
+.ubicacion{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+}
+iframe{
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+}
+.contacto{
+    width: 500px;
+    height: 500px;
+    margin: 50px 0px 0px 0px;
+}
+.contacto img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
+.contacto u, a{
+    color: mediumvioletred;
+}
+
+          /*vista movil*/
+@media screen and (max-width: 500px){
+    .contenedor{
+        width: 90%;
+    }
+    .navegacion{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navegacion h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .navegacion .enlaces{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    /*contenido*/
+    .contenedor2 .logo{
+        width: 220px;
+        height: 100vh;
+    }
+    .logo2{
+        width: 90%;
+        height: 100%;
+        margin: 10px 0px 0px 50px;
+    }
+    .logo2 .guion{
+        font-size: 30px;
+    }
+    .entrada{
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        font-size: 15px;
+    }
+    .logo2 .entrada .u{
+        font-size: 15px;
+    }
+    .entrada .muestra{
+        width: 80px;
+        height: 80px;
+    }
+    .ubicacion{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+/*vista movil imvertida*/
+@media screen and (max-width: 900px){
+    .contenedor2{
+        gap: 0px;
+        width: 80%;
+    }
+    .logo{
+        width: 300px;
+        height: 105vh;
+    }
+    .logo2{
+        width: 90%;
+        margin: 10px 0px 0px 50px;
+    }
+    .entrada{
+        width: 100%;
+        height: 150px;
+    }
+    .logo2 .guion{
+        font-size: 25px;
+    }
+    .logo2 .u{
+        font-size: 20px;
+    }
+    .muestra{
+        width: 120px;
+        height: 120px;
+    }
+    .entrada{
+        margin: 0px;
+    }
+    .contacto{
+        margin: 0px 60px 0px 0px;
+    }
+}
